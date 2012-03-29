@@ -1,0 +1,16 @@
+---
+permalink: /:year/:month/:title
+maruku:
+  png_dir: images/latex
+  png_url: /images/latex
+  use_tex: false
+  use_divs: false
+lsi: false
+minutes: "    5986.6"
+days: "       4.2"
+markdown: maruku
+pygments: true
+pretty_style: html_extension
+server_port: 4000
+tag_page_layout: tag_page
+tag_page_dir: tags

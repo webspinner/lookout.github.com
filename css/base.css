@@ -1,0 +1,226 @@
+html,body,div,span,applet,object,iframe,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+border:0;
+font-size:100%;
+font:inherit;
+vertical-align:baseline;
+margin:0;
+padding:0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+body {
+font-family:proxima-nova-1,proxima-nova-2, "Proxima Nova", Helvetica, Arial, sans-serif;
+color:#444;
+font-size:17px;
+line-height:22px;
+text-shadow:rgba(255,255,255,.01) 0 -1px 1px;
+background:none;
+}
+
+blockquote {
+border-left:5px solid #ddd;
+padding-left:20px;
+margin:15px 30px 0 10px;
+}
+
+a {
+color:#690;
+font-weight:700;
+text-decoration:none;
+}
+
+a: hover {
+color:#3D6A00;
+font-weight:bold!important;
+text-decoration:underline;
+}
+
+b {
+color:#690;
+font-weight:700;
+}
+
+input {
+font-family:inherit;
+}
+
+h1 {
+font-size:30px;
+font-weight:700;
+letter-spacing:1px;
+text-transform:uppercase;
+margin:30px 0 20px 10px;
+}
+
+h2 {
+font-size:35px;
+font-weight:700;
+color:#333;
+}
+
+h2 a {
+text-transform:uppercase;
+font-weight:700;
+color:#333;
+}
+
+h3 {
+font-size:20px;
+font-weight:700;
+}
+
+h3 a {
+color:#333;
+}
+
+h4 a #site-title {
+text-indent:-999px;
+}
+
+h1#site-title {
+background:url('http://hackersatmylookout.files.wordpress.com/2012/02/lookout-title-with-tagline1-2-3.png') no-repeat scroll 0 0 transparent;
+color:transparent;
+display:inline;
+line-height:150px;
+margin:0 0 -70px;
+}
+
+#site-title a {
+color:transparent;
+text-decoration:none;
+font-size:1px;
+}
+
+#site-description {
+font-size:14px;
+width:210px;
+}
+
+#main {
+background:url('http://hackersatmylookout.files.wordpress.com/2012/01/background-main.png') 5px 20px no-repeat;
+width:940px;
+margin-top:50px;
+margin-left:-10px;
+border-bottom:0;
+padding:50px 0 0 20px;
+}
+
+.entry-date {
+line-height:50px;
+text-transform:uppercase;
+color:#690;
+font-size:20px;
+}
+
+.entry-meta a:hover {
+font-weight:bold!important;
+border-bottom:1px Solid #690;
+}
+
+.single-author .by-author {
+visibility:hidden;
+}
+
+.meta-prep {
+display:none;
+}
+
+.meta-sep {
+display:none;
+}
+
+article {
+font-size:15px;
+}
+
+article p {
+margin:0 40px 30px 20px;
+}
+
+article ul li {
+background:url('http://hackersatmylookout.files.wordpress.com/2012/01/sprite-buttons.png') no-repeat -36px -296px transparent;
+margin-bottom:10px;
+padding-left:22px;
+}
+
+.entry-title a:link,.entry-title a:visited {
+color:#333;
+font-size:30px;
+}
+
+.entry-title a:active,.entry-title a:hover {
+text-decoration:underline;
+font-weight:bold!important;
+}
+
+.entry-content {
+position:relative;
+}
+
+div.sharedaddy {
+position:absolute;
+top:-45px;
+margin-left:350px;
+width:98%;
+}
+
+div.sharedaddy div.sd-block {
+border-top:none;
+}
+
+.entry-utility {
+font-size:14px;
+}
+
+.entry-utility span {
+display:inline-block;
+}
+
+.entry-utility a:hover {
+color:#690;
+text-decoration:underline;
+}
+
+.post {
+padding-bottom:10px;
+border-bottom:1px dotted #333;
+}
+
+.widget-container {
+font-size:15px;
+}
+
+.widget-container li a:hover,a:link,a:visited,a:active {
+color:#690;
+font-weight:bold!important;
+}
+
+.widget-area ul ul {
+list-style:none;
+margin-left:0!important;
+}
+
+.widget_search #s {
+width:50%;
+}
+
+h3.widget-title {
+color:#333;
+font-size:17px;
+font-weight:bold!important;
+padding-bottom:5px;
+}
+
+h3.widget-title a {
+font-weight:400;
+font-family:proxima-nova-1,proxima-nova-2,"Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+font-variant:normal;
+color:#444444;
+}
+
+#footer,#footer a {
+display:none;
+}

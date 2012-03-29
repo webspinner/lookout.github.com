@@ -1,0 +1,19 @@
+<div class="entry-content post">
+    <h2 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    {% unless page.hide_meta %}
+    <div class="meta">
+        <span class="entry-date">{{ page.date | date: "%e" | ordinalize }} {{ page.date | date: "%B"}} {{ page.date | date: "%Y"}}</span>
+    </div>
+    {% endunless %}
+
+    <div class="content">
+        {{ body }}
+    </div>
+
+    {% unless page.hide_meta %}
+    <div class="entry-utility">
+        <!-- <span class="author">{{ post.author }}</span> &middot; -->
+        <span class="cat-links">posted in: {% for tag in page.tags %} <a href="/tags/{{tag}}.html" rel="tag">{{tag}}</a> &middot;{% endfor %}</span>
+    </div>
+    {% endunless %}
+</div>
