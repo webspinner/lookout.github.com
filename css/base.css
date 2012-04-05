@@ -81,7 +81,7 @@ text-indent:-999px;
 }
 
 h1#site-title {
-background:url('http://hackersatmylookout.files.wordpress.com/2012/02/lookout-title-with-tagline1-2-3.png') no-repeat scroll 0 0 transparent;
+background:url('../images/header-text.png') no-repeat scroll 0 0 transparent;
 color:transparent;
 display:inline;
 line-height:150px;
@@ -100,7 +100,7 @@ width:210px;
 }
 
 #main {
-background:url('http://hackersatmylookout.files.wordpress.com/2012/01/background-main.png') 5px 20px no-repeat;
+background:url('../images/background-main.png') 5px 20px no-repeat;
 width:940px;
 margin-top:50px;
 margin-left:-10px;
@@ -141,7 +141,7 @@ margin:0 40px 30px 20px;
 }
 
 article ul li {
-background:url('http://hackersatmylookout.files.wordpress.com/2012/01/sprite-buttons.png') no-repeat -36px -296px transparent;
+background:url('../images/sprite-buttons.png') no-repeat -36px -296px transparent;
 margin-bottom:10px;
 padding-left:22px;
 }
