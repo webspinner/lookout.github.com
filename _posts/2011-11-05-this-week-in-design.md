@@ -87,3 +87,5 @@ content on white), add one color accent, make it helvetica, profit.
 width="300"/></center>
 
 Go re-skin your old site finally and win some design awards!
+
+*- [Spphie Xie](https://twitter.com/puffins)*
