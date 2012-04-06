@@ -23,4 +23,4 @@ account, so don't let some of the current sparseness disappoint you too much.
 
 
 
-*- [R. Tyler Croy](https://gibhub.com/rtyler)*
+*- [R. Tyler Croy](https://github.com/rtyler)*
