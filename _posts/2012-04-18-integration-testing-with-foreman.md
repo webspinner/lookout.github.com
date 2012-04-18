@@ -13,13 +13,13 @@ fine and dandy once it has been deployed. The reality of building out a
 service-oriented architecture is that you not only have to expect failure to
 happen, you have to plan and test for it.
 
-As of late we've been using a tool called
+As of late I've been using a tool called
 [Foreman](https://github.com/ddollar/foreman) for some projects to manage their
 own "development stacks." A single service might be composed of a
 `redis-server` instance, a MySQL database and a Rails or
 [Sinatra](http://sinatrarb.com) application.
 
-Managing this with Foreman is easy enough, we would create a `Procfile` with
+Managing this with Foreman is easy enough, I would create a `Procfile` with
 the contents:
 
     web: ruby app.rb
@@ -27,7 +27,7 @@ the contents:
     mysql: ./script/run-mysql-ramdisk
 
 
-When we run `foreman start`, Foreman will manage bringing all of these services
+When I run `foreman start`, Foreman will manage bringing all of these services
 online at once, then when you Ctrl-C `foreman` it will bring down all of the
 servers appropriately.
 
@@ -44,9 +44,6 @@ into other acceptance testing set ups.
 
 With Test Engineer you can use your existing `Procfile` to start and stop the
 entire stack with `TestEngineer#start_stack` and `TestEngineer#stop_stack`.
-
-
-### With Cucumber
 
 If you're already using Cucumber, this becomes very easy to incorporate into
 existing Features with the `@testengineer` tag:
@@ -71,9 +68,21 @@ existing Features with the `@testengineer` tag:
         And I should see my news feed
 
 
-Test Engineer will bring up the entier stack defined in your `Procfile` for
+Test Engineer will bring up the entire stack defined in your `Procfile` for
 each and every scenario listed, providing a good isolated test environment for
 your integration tests.
+
+----
+
+_A note about test isolation:_ In the example `Procfile` above I referenced
+both `redis-server` and a magic script to run MySQL on a ramdisk. When doing
+integration testing with services like this it is absolutely critical to make
+sure that the backing data stores for these services is flushed appropriately
+between the scenarios/test cases. In this example, the `config/redis.conf` file
+should be configured to disable AOF writes and snapshots for Redis, while the
+`run-mysql-ramdisk` should unmount its ramdisk when the process is terminated.
+
+----
 
 
 ### Chaos Engineer
@@ -83,10 +92,10 @@ scenario, which allows for some interesting fault tolerance testing. You can
 define a simple step which invokes `TestEngineer#stop_process(name)`, e.g.:
 
     Given /^the cache server is offline$/ do
-      TestEngineer.stop_process('memcache')
+      TestEngineer.stop_process('redis')
     end
 
-Then in my Cucumber `.feature` file I can turn off the memcached service
+Then in my Cucumber `.feature` file I can turn off the redis service
 mid-way through the test to verify a fault tolerance condition:
 
 
