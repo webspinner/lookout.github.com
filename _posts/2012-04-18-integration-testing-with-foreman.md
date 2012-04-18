@@ -76,7 +76,7 @@ each and every scenario listed, providing a good isolated test environment for
 your integration tests.
 
 
-### Choas Engineer
+### Chaos Engineer
 
 Test Engineer also allows you to arbitrarily turn off services during the
 scenario, which allows for some interesting fault tolerance testing. You can
