@@ -35,7 +35,7 @@ That's great for simple local development and testing, but what about with
 integration testing the service?
 
 
-## Meet Test Engineer
+### Meet Test Engineer
 
 The [Test Engineer](https://github.com/lookout/testengineer) gem builds on top
 of Foreman and adds some basic testing functionality. Currently it's only been
