@@ -8,7 +8,7 @@ layout: nil
     <link href="http://hackers.mylookout.com" rel="self"/>
     <link href="http://hackers.mylookout.com" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://outcasts.flexilis.local/</id>
+    <id>http://hackers.mylookout.com</id>
     <author>
         <name>Lookout Hackers</name>
     </author>
