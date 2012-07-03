@@ -4,7 +4,8 @@ title: Using Puppet Lint with Jenkins
 tags:
 - puppet
 - jenkins
-- continuosdeployment
+- continuoussdeployment
+- howto
 ---
 
 
