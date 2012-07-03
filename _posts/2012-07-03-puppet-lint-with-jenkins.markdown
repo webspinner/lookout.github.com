@@ -43,7 +43,7 @@ little bit of set up work.
 
 ---
 
-On the build pages you will be able drill into an overview report such as the one
+On the build pages you will be able to drill into an overview report such as the one
 pictured below, hyperlinked to allow you to dig deeper into the specific warnings
 
 <img style="border: 1px solid #666; padding: 8px;" alt="Build-specific warnings report" src="/images/post-images/puppet-lint-jenkins/puppet-lint-warnings-build-page.png"/>
