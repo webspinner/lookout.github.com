@@ -46,7 +46,7 @@ little bit of set up work.
 On the build pages you will be able drill into an overview report such as the one
 pictured below, hyperlinked to allow you to dig deeper into the specific warnings
 
-![Build-specific warnings report](/images/post-images/puppet-lint-jenkins/puppet-lint-warnings-build-page.png)
+<img style="border: 1px solid #666; padding: 8px;" alt="Build-specific warnings report" src="/images/post-images/puppet-lint-jenkins/puppet-lint-warnings-build-page.png"/>
 
 ---
 
@@ -54,7 +54,7 @@ On the job page (http://jenkins/job/my-puppet-module) you will also have a
 cross-build trend graph to give an indication of the trend of warnings as time
 goes on.
 
-![Overall Warnings Trend](/images/post-images/puppet-lint-jenkins/puppet-lint-trend.png)
+<img style="border: 1px solid #666; padding: 8px;" alt="Overall warnings trend" src="/images/post-images/puppet-lint-jenkins/puppet-lint-trend.png"/>
 
 ---
 
@@ -67,7 +67,7 @@ be keeping the warnings at zero as time progresses.
 The [Warnings
 plugin](https://wiki.jenkins-ci.org/display/JENKINS/Warnings+Plugin) allows for
 a lot more configuration than I've covered in this post, so be sure to explore
-it's more "Advanced" options once you're up and running!
+its more "Advanced" options once you're up and running!
 
 
 \- [R. Tyler Croy](https://github.com/rtyler/)
