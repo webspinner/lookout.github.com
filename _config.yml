@@ -10,6 +10,7 @@ minutes: "    5986.6"
 days: "       4.2"
 markdown: maruku
 pygments: true
+paginate: 5
 pretty_style: html_extension
 server_port: 4000
 tag_page_layout: tag_page
