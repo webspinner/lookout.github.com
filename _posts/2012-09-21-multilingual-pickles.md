@@ -159,3 +159,6 @@ A combination of the approaches detailed above have allowed us to continue to
 ensure the scenarios we write in Cucumber are portable across locales, as well
 as making sure we continue to properly support a plethora of languages in our
 Rails applications.
+
+
+\- [R. Tyler Croy](https://github.com/rtyler/)
