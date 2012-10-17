@@ -10,11 +10,11 @@ tags:
 
 ### Enumerating the list of all tests to run
 
-As a part of reducing the time it takes to run our Android test suite in continuous
-integration, I've been working on code that will allow us to parallelize the tests across
-an arbitrary number of builders in Jenkins.
+Recently we've been focusing on reducing the amount of time it takes to run our
+Android test suite. As part of this effort we've written code to support
+running our Android tests in parallel across multiple builders in Jenkins.
 
-While this system currently works, something else doesn't: our tests. Running
+While this system currently works, something else doesn't: *our tests*. Running
 the tests like this has changed the order of our tests, and uncovered some very
 unfortunate inter-test dependencies.
 
