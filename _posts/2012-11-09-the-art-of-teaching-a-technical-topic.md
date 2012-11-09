@@ -8,7 +8,7 @@ tags:
 - android
 ---
 
-Recently I give a couple of talks at the Google Extended 
+Recently I gave a couple of talks at the Google Extended 
 Day in Algiers (Algeria). [Google Extended](https://developers.google.com/events/io/io-extended) 
 are events happening all over the world that Google sponsors and co-organizes with 
 the local communities to allow the developers who couldn't make it to their annual event
