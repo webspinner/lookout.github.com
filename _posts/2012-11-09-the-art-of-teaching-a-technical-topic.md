@@ -47,7 +47,7 @@ to grab your hand before jumping from one side of the river to the other, and on
 Because the time is limited you have to make sure that every instant of your presentation is worth an important information. 
 Prior to your presentation, you have to triage the different things that you want to teach. A good process would be:
 
-1. **Brainstorm and write down all the notions that you think should be taught.
+1. ##Brainstorm and write down all the notions that you think should be taught.
 1. **Classify those notions within 3 categories: Mandatory/Important/Optional. 
 1. **Prepare your normal presentation with the mandatory and important notions first. 
 1. **Take your time explaining the notions by their order of importance.
