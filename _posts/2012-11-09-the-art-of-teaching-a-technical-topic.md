@@ -13,8 +13,8 @@ Day in Algiers (Algeria). Google Extended are events happening all over the worl
 that Google sponsors and co-organizes with the local communities to allow the developers 
 who couldn't make it to their annual event (Google IO) to connect with other developers, 
 learn about new trends/topics, try new hardware and talk to Googlers. 
-I was invited as a speaker to the event, in order to teach the localcommunity how to 
-program an Android application . 
+I was invited as a speaker to the event, in order to teach the local community how to 
+program an Android application. 
 
 To do that, I had to give three talks: 
 
@@ -28,26 +28,41 @@ To do that, I had to give three talks:
    followed when building a mobile application in general and an Android application 
    in particular.
 
-Now, this was literally my first experience as a teacher and I found the task very challenging and fun.  In order to share that experience, I decided to come up with a list of good practices to consider when teaching any technical topic and here they are:
+Now, this was literally my first experience as a teacher and I found the task very challenging and fun.  
+In order to share that experience, I decided to come up with a list of good practices to consider when 
+teaching any technical topic and here they are:
 
--> Set very clear expectations from the beginning
-My talks had to be 45 mins long max (that includes the Q/A sessions). That's a very short amount of time and no matter how focused your presentation is, it is impossible to teach all the fundamentals that your audience will need to build their first application within that timespan. On the other hand, your audience comes to your talks hoping to learn everything they need to magically build their first MVP (Minimal Viable Product) during the event Hackathon. So, if you don't want to disappoint your audience it is important to set very clear expectations at the very beginning of your talk.  Ultimately you want your audience to understand some fundamental notions and then take it from there to learn more by reading the online documentation. Your goal here, is to be the ice breaker between them and that topic. They need to grab your hand before making jumping from one side of the river to the other, and once they made that jump you can just let them go wonder by themselves.
+### 1. Set very clear expectations from the beginning
+My talks had to be 45 mins long max (that includes the Q/A sessions). That's a very short amount of time and 
+no matter how focused your presentation is, it is impossible to teach everything that your audience  needs to 
+build their first application within that timespan. On the other hand, your audience comes to your talks hoping 
+to learn everything they need to magically build their first MVP (Minimal Viable Product) during the event's Hackathon. 
+So, if you don't want to disappoint them, it is important to set very clear expectations at the very beginning of your talk.  
+Ultimately you want your audience to understand some fundamental notions and then take it from there to learn more by reading 
+the online documentation. Your goal here, is to be the ice breaker between them and the technology you are presenting. They need 
+to grab your hand before jumping from one side of the river to the other, and once they made that jump you can just let them go
+ wonder by themselves.
 
-Choose your content carefully
-Because the time is limited you have to make sure that every instant of your presentation is worth an important information. Prior to your presentation, you have to triage the different things that you want to teach. A good process would be:
+### 2. Choose your content carefully
+Because the time is limited you have to make sure that every instant of your presentation is worth an important information. 
+Prior to your presentation, you have to triage the different things that you want to teach. A good process would be:
 
-1/  Brainstorm and write down all  the notions that you think should be taught.
-2/ Classify those notions within 3 categories: Mandatory/Important/Optional. 
-3/ Prepare your normal presentation with the mandatory and important notions first. 
-4/ Take your time explaining the notions by their order of importance.
-5/ Prepare some extra-slides with the optional notions in case you have extra-time or if they come up in the Q/A session.
+1. **Brainstorm and write down all the notions that you think should be taught.
+2. **Classify those notions within 3 categories: Mandatory/Important/Optional. 
+3. **Prepare your normal presentation with the mandatory and important notions first. 
+4. **Take your time explaining the notions by their order of importance.
+5. **Prepare some extra-slides with the optional notions in case you have extra-time or if they come up in the Q/A session.
 
--> Have a clear narrative
-There is a notion in writing called: the Tree-act structure (link: http://en.wikipedia.org/wiki/Three-act_structure). It is basically a model used in writing a modern storytelling which can be found in a wide range of  domains: Drama, poetry, comics, novels, movies, video games, to name a few. This notion basically says that to tell a good story we have to structure it in 3 acts:
+### 3. Have a clear narrative
+There is a notion in writing called: the [Tree-act structure](http://en.wikipedia.org/wiki/Three-act_structure). It is basically a 
+model used in writing a modern storytelling which can be found in a wide range of domains: Drama, poetry, comics, novels, movies, 
+video games, to name a few.
 
-Acte 1: The Setup, which is where all the major characters of the story are introduced.
-Acte 2: The Confrontation, which is where all the story, its characters and conflict are all established.
-Acte 3: The Resolution, which represents the final confrontation of your story or dénouement.
+This notion basically states that to tell a good story we have to structure it in 3 acts:
+
+**Acte 1: The Setup, which is where all the major characters of the story are introduced.
+**Acte 2: The Confrontation, which is where all the story, its characters and conflict are all established.
+**Acte 3: The Resolution, which represents the final confrontation of your story or dénouement.
 
 The nice thing about this structure is that it provides a clear path to bringing some knowledge to an audience. In the case of Android, we could imagine the 3 following acts:
 
