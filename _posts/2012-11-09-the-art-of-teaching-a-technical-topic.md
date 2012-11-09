@@ -48,10 +48,10 @@ Because the time is limited you have to make sure that every instant of your pre
 Prior to your presentation, you have to triage the different things that you want to teach. A good process would be:
 
 1. **Brainstorm and write down all the notions that you think should be taught.
-2. **Classify those notions within 3 categories: Mandatory/Important/Optional. 
-3. **Prepare your normal presentation with the mandatory and important notions first. 
-4. **Take your time explaining the notions by their order of importance.
-5. **Prepare some extra-slides with the optional notions in case you have extra-time or if they come up in the Q/A session.
+1. **Classify those notions within 3 categories: Mandatory/Important/Optional. 
+1. **Prepare your normal presentation with the mandatory and important notions first. 
+1. **Take your time explaining the notions by their order of importance.
+1. **Prepare some extra-slides with the optional notions in case you have extra-time or if they come up in the Q/A session.
 
 ### 3. Have a clear narrative
 There is a notion in writing called: the [Tree-act structure](http://en.wikipedia.org/wiki/Three-act_structure). It is basically a 
@@ -60,9 +60,9 @@ video games, to name a few.
 
 This notion basically states that to tell a good story we have to structure it in 3 acts:
 
-**Acte 1: The Setup, which is where all the major characters of the story are introduced.
-**Acte 2: The Confrontation, which is where all the story, its characters and conflict are all established.
-**Acte 3: The Resolution, which represents the final confrontation of your story or dénouement.
+1. **Acte 1: The Setup, which is where all the major characters of the story are introduced.
+2. **Acte 2: The Confrontation, which is where all the story, its characters and conflict are all established.
+3. **Acte 3: The Resolution, which represents the final confrontation of your story or dénouement.
 
 The nice thing about this structure is that it provides a clear path to bringing some knowledge to an audience. In the case of Android, we could imagine the 3 following acts:
 
