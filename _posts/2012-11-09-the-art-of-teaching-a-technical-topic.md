@@ -107,8 +107,9 @@ You, as a teacher, have great power and that comes with great responsibility. As
 whether your audience will develop a passion for that topic or will develop an aversion for it. Everyone has some bad memories about that weird/boring/tyrannical 
 teacher who made every instant of its classes, feel like a very bad nightmare. Let's pretend he was teaching physics, as a consequence  it is likely that a 
 non negligible number of students will associate physics to this teacher and because they hated him, they will hate physics for their entire life.  The moral 
-of that, is that by making your presentation pleasant to watch and entertaining you are eventually going to create passion for whatever you are teaching.  Passion is important, 
-because this is the reason that will motivate your audience to spend their free time reading the official documentation or the specification and building interesting stuff.
+of that, is that by making your presentation pleasant to watch and entertaining you are eventually going to create passion for whatever you are teaching.  
+Passion is important, because this is the reason that will motivate your audience to spend their free time reading the official documentation or the 
+specification and building interesting stuff.
 
 ### 8. Only teach topics that you are interested in
 This point is slightly related to the previous one. If you want to entertain and interest your audience, you have to show some passion on the topic you are presenting. 
@@ -120,19 +121,20 @@ When teaching a topic to a group of people, you'll likely encounter three 4 type
 1. Those who don't pay too much attention (wrong room may be?)
 2. Those who pay attention but struggle at understanding the content.  
 3. Those who understand everything.
-4. Those who understand everything and who want to know even more details about each topic. By their questions, they sometimes force you to think hard and they might as well 
-teach you something new.
+4. Those who understand everything and who want to know even more details about each topic. By their questions, they sometimes force you to think hard and they 
+might as well teach you something new.
 
-This is the ideal situation for you to track down the persons who fit within the last category. Go talk to them after the sessions or during the party, find out who they are, 
-where they work and hire them!
+This is the ideal situation for you to track down the persons who fit within the last category. Go talk to them after the sessions or during the party, find out 
+who they are, where they work and hire them!
 
 ### 9. Determine success
-It is important for you, to determine and measure the success of your interventions. That way you will know what to keep and what to change next time (and yes there will be a next time).
-In the case of teaching Android to beginners, I defined success by the following metrics:
+It is important for you, to determine and measure the success of your interventions. That way you will know what to keep and what to change next time (and yes 
+there will be a next time). In the case of teaching Android to beginners, I defined success by the following metrics:
 
-## The number of questions asked during Q/A.
-## The quality of the questions asked during Q/A.  Are they silly questions, like: What is the difference between an Activity and Intent again? Or are they more specific and clever? 
-## Whether the attendees knew how to start building their application during the Hackathon and whether they followed the platform guidelines.
+1. The number of questions asked during Q/A.
+2. The quality of the questions asked during Q/A.  Are they silly questions, like: What is the difference between an Activity and Intent again? Or are they 
+more specific and clever? 
+3. Whether the attendees knew how to start building their application during the Hackathon and whether they followed the platform guidelines.
 
 By the way besides all of these points, you should also consider all the good practices that you need to follow to do a great presentation.
 
@@ -141,14 +143,14 @@ Teaching is hard, doing it well is even harder but if you are successful are it 
 
 1. Attendees will be happy and will associate their happiness to your products. 
 2. These guys will ultimately be your best ambassadors, they will talk about you and your company to their friends and colleagues. 
-3. You will attract talented engineers to your team. If you show passion and a certain level of mastery on the topic that you are presenting, it is likely that the talented engineers who attended your talks will develop sympathy for your company and will try to know more about it and eventually they will want to join you there!
+3. You will attract talented engineers to your team. If you show passion and a certain level of mastery on the topic that you are presenting, it is likely that the 
+talented engineers who attended your talks will develop sympathy for your company and will try to know more about it and eventually they will want to join you there!
 4. If your presentation was good, it will be shared hundred or even thousands of times .  It will go viral!
 5. The Q/A session might bring some interesting discussions from which you can learn new things.
 
-And finally, if you can, take some time to network, socialize and to talk to other developers or even non-technical participants. A simple discussion during an event like that can be the origin of your next big idea!
+And finally, if you can, take some time to network, socialize and to talk to other developers or even non-technical participants. A simple discussion during an event 
+like that can be the origin of your next big idea!
 
 So go out, teach what you know and do it well!
 
 \- [Amokrane Chentir](https://github.com/Amokrane/)
-
-Amokrane Chentir - Client Software Engineer
