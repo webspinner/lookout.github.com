@@ -8,15 +8,15 @@ tags:
 - android
 ---
 
-Recently I have been asked to give a couple of talks during the Google Extended 
+Recently I give a couple of talks at the Google Extended 
 Day in Algiers (Algeria). [Google Extended](https://developers.google.com/events/io/io-extended) 
 are events happening all over the world that Google sponsors and co-organizes with 
 the local communities to allow the developers who couldn't make it to their annual event
 [Google IO](https://developers.google.com/events/io/) to connect with other developers, 
-learn about new trends/topics, try new hardwares and talk to Googlers. 
+learn about new trends/topics, try new hardwares and talk to Googlers. I was invited as a speaker 
+to the event, in order to teach the local community how to program an Android application. 
 
-I was invited as a speaker to the event, in order to teach the local community how to 
-program an Android application. To make that happen, I gave three talks: 
+I gave three talks: 
 
 1. Android Overview - kind of a 101 session.
 
@@ -40,7 +40,6 @@ So, if you don't want to disappoint them, it is important to set very clear expe
 at the very beginning of your talk. Ultimately you want your audience to understand some 
 fundamental notions and then take it from there to learn more by reading the online documentation. 
 Your goal here, is to be the ice breaker between them and the technology you are presenting. 
-
 
 ### 2. Choose your content carefully
 As time is limited you have to make sure that every instant of your presentation is worth 
@@ -95,7 +94,7 @@ whatever is written on Wikipedia.
 
 ### 6. Be prepared to fail
 This is a no brainer and kind of related to any type of presentation that involves demoing something. 
-To put it simply: Expect everything to fail! That includes: Internet connexion will go down during the event,
+To put it simply: Expect everything to fail! That includes: Internet connection will go down during the event,
 your favorite IDE will crash, your project won't compile for some odd reasons etc. When preparing your 
 presentations you have to prepare at least 1 backup plan for each failure scenario. Internet will go down? 
 Then download everything that you need so that you can use it offline (example: save the result of 
