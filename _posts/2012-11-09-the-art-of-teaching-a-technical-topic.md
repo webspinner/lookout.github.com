@@ -14,7 +14,7 @@ are events happening all over the world that Google sponsors and co-organizes wi
 the local communities to allow the developers who couldn't make it to their annual event
 [Google IO](https://developers.google.com/events/io/) to connect with other developers, 
 learn about new trends/topics, try new hardwares and talk to Googlers. I was invited as a speaker 
-to the event, in order to teach the local community how to program an Android application. 
+to the event, in order to teach the local community how to develop an Android application.
 
 I gave three talks: 
 
@@ -28,14 +28,14 @@ I gave three talks:
 
 This was literally my first experience as a speaker and I found the task very 
 challenging and fun.  In order to share that experience, I decided to come up with a 
-list of good practices to consider when teaching any technical topic and here they are:
+list of good practices to consider when teaching any technical topic; here they are:
 
 ### 1. Set very clear expectations from the beginning
-My talks had to be 45 mins long max (that includes the Q/A sessions). That's a very short 
-amount of time and no matter how focused your presentation is, it is impossible to teach 
-everything that your audience needs to build their first application within that timespan. 
-On the other hand, your audience comes to your talks hoping to learn everything they need 
-to magically build their first MVP (Minimal Viable Product) during the Hackathon. 
+My talks had to be 45 mins long at most (including the Q/A sessions). That's a very short 
+amount of time and no matter how focused your presentation is, it is hard to teach 
+everything that your audience needs within that timespan. On the other hand, your audience 
+comes to your talks hoping to learn everything they need to magically build their 
+first MVP (Minimal Viable Product) for the Hackathon. 
 So, if you don't want to disappoint them, it is important to set very clear expectations 
 at the very beginning of your talk. Ultimately you want your audience to understand some 
 fundamental notions and then take it from there to learn more by reading the online documentation. 
@@ -72,9 +72,8 @@ The nice thing about this structure is that it provides a clear path to bringing
 an audience. In the case of Android, we could imagine the 3 following acts:
 
 1. Acte 1: Setting up the context, introducing the software architecture, explaining some fundamentals notions 
-like the Android Runtime, what's Dalvik and how it works,  how does Android manage memory etc.  
-This is probably the most boring part of the talk but it's so important that you have to find an entertaining 
-way for presenting it.
+like the Android Runtime, what's Dalvik and how it works,  how does Android manage memory etc.  This is probably the most 
+boring part of the talk but it's so important that you have to find an entertaining way for presenting it.
 
 2. Acte 2: Use the notions taught during Acte 1 to explain how to build an Android application.
 
@@ -95,7 +94,7 @@ whatever is written on Wikipedia.
 ### 6. Be prepared to fail
 This is a no brainer and kind of related to any type of presentation that involves demoing something. 
 To put it simply: Expect everything to fail! That includes: Internet connection will go down during the event,
-your favorite IDE will crash, your project won't compile for some odd reasons etc. When preparing your 
+your favorite IDE will crash, your project won't compile for some odd reasons and so on. When preparing for your 
 presentations you have to prepare at least 1 backup plan for each failure scenario. Internet will go down? 
 Then download everything that you need so that you can use it offline (example: save the result of 
 an API call in JSON in a file). Afraid that your favorite IDE will freeze and crash many times during the demo? 
@@ -148,8 +147,8 @@ By the way besides all of these points, you should also consider all the good pr
 do a great presentation.
 
 ### Final words: why you should care about doing it well?
-Teaching is hard, doing it well is even harder but if you are successful at it, the Return Of Investment is very precious t
-o you and your company:
+Teaching is hard, doing it well is even harder but if you are successful at it, the return on investment will be huge 
+for your company:
 
 1. Attendees will be happy and will associate their happiness to your products. 
 2. These guys will ultimately be your best ambassadors, they will talk about you and your company to their friends and colleagues. 
