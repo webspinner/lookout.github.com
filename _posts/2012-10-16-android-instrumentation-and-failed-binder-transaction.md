@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android instrumentation & "FAILED BINDER TRANSACTION"
+title: Android instrumentation and "FAILED BINDER TRANSACTION"
 tags:
 - android
 - adb
