@@ -15,6 +15,7 @@
 <div class="sidebar_content">
     <br />
     <h2>Recent Articles</h2>
+    <br/>
 
     {% for post in site.posts limit:6 %}
       <h3><a alt="{{ post.title }}" alt="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -26,6 +27,13 @@
 
     <h2>Elsewhere</h2>
     <br />
+
+    <h3><a alt="Open Source Project Gallery" href="/oss.html">Open Source Efforts</a></h3>
+    <em>Check out Lookout's open source projects</em>
+
     <h3><a alt="Lookout Eng on Twitter" href="http://twitter.com/lookouteng">@LookoutEng</a></h3>
+    <em id="sub_h3">Follow @LookoutEng on Twitter</em>
+
     <h3><a alt="Lookout on Github" href="http://github.com/lookout">GitHub</a></h3>
+    <em id="sub_3">Follow Lookout's open source work on GitHub</em>
 </div>
