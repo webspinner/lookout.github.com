@@ -1,0 +1,31 @@
+<div id="atom">
+    <a href="http://feeds.feedburner.com/LookoutHackersBlog" id="atom_link">
+      <img src="/images/leaf.png" alt="Atom Feed" title="Subscribe to the
+        Atom feed"/>
+    </a>
+</div>
+<div id="subscribe">
+  <center>
+    A collection of hacks from Lookout Engineering
+  </center>
+</div>
+
+<div class="clear"></div>
+
+<div class="sidebar_content">
+    <br />
+    <h2>Recent Articles</h2>
+
+    {% for post in site.posts limit:6 %}
+      <h3><a alt="{{ post.title }}" alt="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a></h3>
+      <em id="sub_h3">{{ post.date | date_to_long_string }}</em>
+    {% endfor %}
+
+    <br />
+    <br />
+
+    <h2>Elsewhere</h2>
+    <br />
+    <h3><a alt="Lookout Eng on Twitter" href="http://twitter.com/lookouteng">@LookoutEng</a></h3>
+    <h3><a alt="Lookout on Github" href="http://github.com/lookout">GitHub</a></h3>
+</div>

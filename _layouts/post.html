@@ -1,20 +1,25 @@
 ---
 layout: default
 ---
+
 {% assign body = content %}
 
 <span style="float: right;">
     <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-via="lookouteng" data-related="lookout,lookouteng">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </span>
-{% include post-block.html %}
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'lookouthackers';
-    (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
+<div id="posts">
+    <h2><a alt="{{ page.title }}" href="{{ page.url }}">{{ page.title }}</a></h2>
+    <em id="sub_h2">{{ page.date | date_to_long_string }}</em>
+
+    {{ content }}
+
+    <div id="disqus_thread"></div>
+</div>
+
+<div id="sidebar">
+{% include sidebar.html %}
+</div>
+
+{% include disqus-post.html %}

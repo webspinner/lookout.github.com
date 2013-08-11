@@ -1,15 +1,13 @@
 ---
 layout: default
-title: Lookout Hackers Blog
+title: lookout hackers blog
 ---
-{% for page in paginator.posts %}
-{% assign body = page.content %}
-{% include post-block.html %}
-{% endfor %}
+<div id="sidebar">
 
+{% include sidebar.html %}
 
 <!-- Pagination links -->
-<div class="pagination">
+<div class="sidebar_content pagination">
 {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
         <a href="/" class="previous">Previous</a>
@@ -23,3 +21,13 @@ title: Lookout Hackers Blog
 {% endif %}
 </div>
 
+</div>
+
+<div id="posts">
+
+{% for page in paginator.posts %}
+{% assign body = page.content %}
+{% include post-block.html %}
+{% endfor %}
+
+</div>
