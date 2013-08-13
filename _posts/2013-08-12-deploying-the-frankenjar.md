@@ -16,7 +16,7 @@ JVM, especially when compared with the simplistic Ruby VM (MRI). Historically,
 Lookout has been a very Ruby-oriented company, I would estimate that 80%+ of
 our server-side code is Ruby-based (including Chef). It's tremendously easy to
 build Ruby projects at Lookout, but the deployment process and production
-performance leaves something to be desired.
+performance leave something to be desired.
 
 <img src="/images/jruby_large.png" title="JRuby!" width="200" align="right"/>
 
