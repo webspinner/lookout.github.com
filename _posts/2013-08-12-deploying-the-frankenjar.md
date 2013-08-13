@@ -46,7 +46,7 @@ wants were:
 
 After an afternoon of tinkering with
 [Warbler](https://github.com/jruby/warbler#readme), a gem which makes `.jar`/`.war`
-qiles from Ruby applications with JRuby, we were able to create the
+files from Ruby applications with JRuby, we were able to create the
 "**frankenjar**." The frankenjar is a self-contained, self-running version of
 the entire application.
 
@@ -132,9 +132,9 @@ to local development and testing. it should be noted that in the
 `config/warble.rb` above only includes a select few `.rake` files to be bundled
 inside the archive, no sense running unit tests in production.
 
-Using Rake tasks in this way has the added benefit of ensuring the development
-team can use the same tasks (and codepaths) locally when building the
-application, as will be run in production.
+Because we're using the same Rake tasks, we're getting a bit of extra testing
+and usage of those tasks and codepaths that will be used locally and in
+production.
 
 
 ## Deploying the jar
@@ -159,8 +159,10 @@ this we use a little bit of [Capistrano](http://www.capistranorb.com/):
       end
     end
 
-Combined with a little bit of shell scripting to block the deployment until the
-frankenjar is serving requests again:
+With a little bit of shell scripting, to block the deployment until the
+frankenjar is serving requests again, we can rely on the upstream load balancer
+([nginx](http://nginx.org/)) to handle the fail-over to other app instances
+during the restart.
 
 <script src="https://gist.github.com/rtyler/6208038.js?file=upstart-helper.sh" type="text/javascript">
 </script>
@@ -178,7 +180,7 @@ The approach allows the developer team to upgrade JRuby, any dependent gems,
 switch out web servers, and reuse all the powerful profiling tooling available
 in the Java community when doing it.
 
-While the frankenjar is slightly off the beaten path in the JRuby community, but
+While the frankenjar is slightly off the beaten path in the JRuby community, it's
 definitely worth the extra little bit of work to get there.
 
 
