@@ -10,6 +10,10 @@ tags:
 - java
 ---
 
+TL;DR; check out **[ImperiusGeorge](https://github.com/lookout/ImperiusGeorge/)**
+and *[ImperiusGem](https://github.com/lookout/ImperiusGem/)* on github and drive
+Android UI-Automator remotely in ruby!
+
 The Android ecosystem can be a diverse and difficult target while maintaining stability
 across all devices. Various testing approaches can alleviates this problem– and the holy
 grail is end-to-end testing on production phones with production builds.
@@ -31,7 +35,7 @@ We wrote a tool to let us write Ruby on a coordinating computer that controls an
 enabled device over USB. You write ruby on your desktop/server and it'll drive the java runtime
 on Android.
 
-It's called ImperiusGeorge after the [Imperius Curse](http://harrypotter.wikia.com/wiki/Imperius_Curse)
+It's called [ImperiusGeorge](https://github.com/lookout/ImperiusGeorge/) after the [Imperius Curse](http://harrypotter.wikia.com/wiki/Imperius_Curse)
 and the adorable [Curious George](http://pbskids.org/curiousgeorge/) character. It's remote mind control
 like `imperio` and curiously amazing like our monkey friend. Forget having testing monkeys manually
 verifying your project, run an unforgivable curse on Curious George instead!
