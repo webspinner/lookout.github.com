@@ -119,3 +119,12 @@ p {
 .flickr-medium {
   border: none;
 }
+
+.figure {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.figure span {
+  display: block;
+}

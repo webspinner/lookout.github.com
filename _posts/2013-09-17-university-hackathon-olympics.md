@@ -83,3 +83,5 @@ Want to learn more?
 - Check out all the open [jobs at Lookout](http://bit.ly/lookout-all-jobs)
 
 Join us and help us keep millions safe.
+
+\- [Marc Chung](https://github.com/mchung/)
