@@ -12,7 +12,7 @@ markdown: maruku
 pygments: true
 paginate: 5
 pretty_style: html_extension
-server_port: 4000
+port: 4000
 tag_page_layout: tag_page
 tag_page_dir: tags
 safe: false
