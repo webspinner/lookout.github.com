@@ -12,7 +12,7 @@ blog](http://unethicalblogger.com)*)
 
 ---
 
-As the [Lookout](http://hackers.mylookout.com) code-base grows, both in
+As the [Lookout](http://hackers.lookout.com) code-base grows, both in
 individual repositories but also in the sheer number of repos we maintain, I've
 found it often difficult to find what I'm looking for.
 

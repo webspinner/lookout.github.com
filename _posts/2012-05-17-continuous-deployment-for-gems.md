@@ -7,7 +7,7 @@ tags:
 - rubygems
 ---
 
-As a Ruby shop, [we](http://www.mylookout.com/about/jobs) have created and
+As a Ruby shop, [we](https://www.lookout.com/about/careers) have created and
 maintain a large number of Ruby gems.
 
 In the earlier days we set up an internal gem repository with clearly

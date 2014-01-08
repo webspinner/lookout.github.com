@@ -9,12 +9,12 @@ tags:
 ---
 
 Earlier this year we announced [support for various
-languages](http://blog.mylookout.com/blog/2012/05/15/lookout-russian-korean-traditional-chinese/)
+languages](https://blog.lookout.com/blog/2012/05/15/lookout-russian-korean-traditional-chinese/)
 in our products, but we haven't discussed any of the engineering work
 that went into the effort.
 
 In order to localize our main Rails application powering
-[mylookout.com](https://www.mylookout.com) we wanted to make sure that we were
+[lookout.com](https://www.lookout.com) we wanted to make sure that we were
 correctly localizing many of the user flows that we already test with [Cucumber
 and
 Capybara](https://github.com/saucelabs/sauce_ruby/wiki/Cucumber-and-Capybara).

@@ -8,13 +8,13 @@ tags:
 ---
 
 
-At [Lookout](http://mylookout.com/about/careers) we use a *lot* of open source
+At [Lookout](https://www.lookout.com/about/careers) we use a *lot* of open source
 software throughout engineering.
 
 <a href="https://github.com/lookout" target="_blank"><img
 src="/images/post-images/were-on-github/octocat.png" align="right"/></a>
 
-Being hackers at heart, we also have a lot of [gems](http://rubygems.org),
+Being hackers at heart, we also have a lot of [gems](https://rubygems.org),
 libraries, scripts and other things that we want to share with the world. To
 that end you can now find us [on GitHub](https://github.com/lookout).
 

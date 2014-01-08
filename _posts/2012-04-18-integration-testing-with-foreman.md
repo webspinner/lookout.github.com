@@ -56,7 +56,7 @@ existing Features with the `@testengineer` tag:
 `features/user_login.feature`:
 
     @testengineer
-    Feature: Log in to mylookout.com
+    Feature: Log in to lookout.com
       In order to find or scream my phone
       As a registered Lookout user
       I should be able to log into the user area

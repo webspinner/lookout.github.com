@@ -5,19 +5,19 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>Lookout Hackers Blog</title>
-    <link href="http://hackers.mylookout.com" rel="self"/>
-    <link href="http://hackers.mylookout.com" />
+    <link href="http://hackers.lookout.com" rel="self"/>
+    <link href="http://hackers.lookout.com" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://hackers.mylookout.com</id>
+    <id>http://hackers.lookout.com</id>
     <author>
         <name>Lookout Hackers</name>
     </author>
     {% for post in site.posts limit:20 %}
         <entry>
             <title>{{ post.title }}</title>
-            <link href="http://hackers.mylookout.com{{ post.url }}"/>
+            <link href="http://hackers.lookout.com{{ post.url }}"/>
             <updated>{{ post.date | date_to_xmlschema }}</updated>
-            <id>http://hackers.mylookout.com{{ post.id }}</id>
+            <id>http://hackers.lookout.com{{ post.id }}</id>
             <content type="html">{{ post.content | xml_escape }}</content>
         </entry>
     {% endfor %}
