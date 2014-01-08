@@ -43,7 +43,7 @@ Here are some photos from the event:
 
 Hackathons have been part of Lookout's culture from the very beginning.  [Engineers at Lookout](https://www.lookout.com/about/careers/engineering) hack regularly by building prototypes or releasing software to the open source community.  Our hackernoons are a great time to explore new ideas, build demos, get feedback, and ultimately make things better.
 
-Since we believe so strongly in hackathons, it should come as no surprise that we were eager to volunteer as mentors to help students productively hack on their ideas.  We worked with Project Shepherd, a large and ambitious group of students interested in building a missing person finder.
+Since we believe so strongly in hackathons, it should come as no surprise that we were eager to volunteer as mentors to help students productively hack on their ideas.  We worked with Project Shepherd, a large and ambitious group of students interested in building a missing person finder.  Project Shepherd is [open sourced on GitHub](https://github.com/ProjectShepherd).
 
 We had a great time.  Here are a couple of photos of the team in action:
 
