@@ -71,8 +71,7 @@ The first step to building a frankenjar is defining a `config/warble.rb` file.
 The file contains two important pieces of information: the directories/files to
 bundle up, and the name of the resulting archive.
 
-<script src="https://gist.github.com/rtyler/6208038.js?file=warble.rb" type="text/javascript">
-</script>
+{% gist rtyler/6208038 warble.rb %}
 
 Warbler does some helpful auto-detection for Rack applications which gets in
 our way in this case. Since we *do* have a Rack application, but we *don't*
@@ -80,8 +79,7 @@ want to create a `.war` file, we need to "hide" `config.ru` from Warbler during
 the packaging process. To help with this we created the following script to
 properly pre-compile our front-end assets, and create the `.jar` file.
 
-<script src="https://gist.github.com/rtyler/6208038.js?file=package.sh" type="text/javascript">
-</script>
+{% gist rtyler/6208038 package.sh %}
 
 
 Executable jars created by Warbler will automatically invoke the first file
@@ -98,8 +96,7 @@ test consoles, or even running the server itself.
 Coaxing Rake to properly load the `Rakefile` embedded within the `.jar` file
 was a bit of a challenge, and *does* require monkey-patching Rake:
 
-<script src="https://gist.github.com/rtyler/6208038.js?file=franken.rb" type="text/javascript">
-</script>
+{% gist rtyler/6208038 franken.rb %}
 
 
 With all that put in place, invoking `./scripts/package.sh` will create a nice,
@@ -164,8 +161,7 @@ frankenjar is serving requests again, we can rely on the upstream load balancer
 ([nginx](http://nginx.org/)) to handle the fail-over to other app instances
 during the restart.
 
-<script src="https://gist.github.com/rtyler/6208038.js?file=upstart-helper.sh" type="text/javascript">
-</script>
+{% gist rtyler/6208038 upstart-helper.sh %}
 
 
 ## It's Alive!

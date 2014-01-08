@@ -33,10 +33,11 @@ It's called [ImperiusGeorge](https://github.com/lookout/ImperiusGeorge/) after t
 
 Instead of writing this in Java, compiling, pushing to your phone, then running via ADB:
 
-<script src="https://gist.github.com/t413/769326b5c260fc6f1c1f.js" type="text/javascript"> </script>
+{% gist t413/769326b5c260fc6f1c1f %}
 
 Instead write this in ruby alongside your server interaction code:
-<script src="https://gist.github.com/t413/91816cb4c8bf86376b3d.js" type="text/javascript"> </script>
+
+{% gist t413/91816cb4c8bf86376b3d %}
 
 ##How it works
 We needed a way to drive the Java runtime via text HTTP Get requests. Most of the work is done in [LanguageAdapter.java](https://github.com/lookout/ImperiusGeorge/blob/master/src/imperiusgeorge/backend/LanguageAdapter.java). Here's where we make a single method `run` introspectively run any available method on any class *or object* with any arguments. `run` takes three `String` parameters, 'on', 'method', and 'arguments'.
