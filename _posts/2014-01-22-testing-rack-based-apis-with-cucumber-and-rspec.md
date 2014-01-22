@@ -186,6 +186,6 @@ some RSpec examples which perform slower, more integration-level testing.
 ---
 
 
-Hopefully you find `lookout-rack-test useful in testing and documenting your own Rack-based JSON APIs!
+Hopefully you find `lookout-rack-test` useful in testing and documenting your own Rack-based JSON APIs!
 
 *- [Ian Smith](https://github.com/ismith)*
