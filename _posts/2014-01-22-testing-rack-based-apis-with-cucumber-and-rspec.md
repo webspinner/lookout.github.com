@@ -13,9 +13,13 @@ tags:
 
 Yesterday, I mentioned that we'd recently released
 [`lookout-rack-test`](https://github.com/lookout/lookout-rack-test).  Today I'm
-going to talk about how to use it for testing Rack-based JSON APIs.
+going to talk about how to use it for testing Rack-based JSON APIs. One of the
+things we like to use this gem for is writing Cucumber scenarios as our **API
+specification**, making sure that everybody agrees on what an API looks like
+before we start implementing.
 
-# Cucumber
+
+# Specifying API behavior with Cucumber
 
 Before using Lookout::Rack::Test::Cucumber, you need to tell it where to find
 your app:
@@ -94,7 +98,6 @@ a user` might factory up a user and put its id and state values into
         "state" : "{% raw %}{{user_state}}{% endraw %}"
       }
     """
-    
 ```
 
 You can also combine this with capture groups in your step definitions.  For
@@ -127,10 +130,11 @@ would allow multiple tests relating to the user's state:
     Then the response should be 404
 ```
 
-# RSpec
+# Deeper API testing with RSpec
 
 Like with Cucumber, the first thing you want to do is set up the application and
 models:
+
 ```ruby
 require 'lookout/rack/test'
 require 'lookout/rack/test/rspec'
@@ -141,6 +145,7 @@ setup_routes(TestApp)
 
 `setup_models` assumes that the `Models` object passed to it has a `.setup` and
 `.unsetup` method, which will be run around your test examples marked `{% raw %}:speed => :slow{% endraw %}`:
+
 ```ruby
   describe 'TestModels`, :speed => :slow do
     context 'A model with an id' do
@@ -150,6 +155,10 @@ setup_routes(TestApp)
     end
   end
 ```
+
+These examples will have factories loaded for them, and will setup and teardown
+the models for each example.
+
 
 `setup_routes` simply requires that it be passed a class that defines a Rack
 application, something it can call `.new` on.  Having done that, you can use the
@@ -169,8 +178,14 @@ usual `Rack::Test::Methods` in tests of `:type => :route`:
   end
 ```
 
-Hopefully you find this useful in testing your own Rack-based JSON APIs.  One
-thing we like to do is write our Cucumber tests first as spec documents, making
-sure everyone agrees on what the API looks like before we start implementing.
+Ensuring that different sets of examples are tagged with `:slow` or `:route`
+makes it *much* easier to have some RSpec examples which run **very** fast, and
+some RSpec examples which perform slower, more integration-level testing.
+
+
+---
+
+
+Hopefully you find `lookout-rack-test useful in testing and documenting your own Rack-based JSON APIs!
 
 *- [Ian Smith](https://github.com/ismith)*
