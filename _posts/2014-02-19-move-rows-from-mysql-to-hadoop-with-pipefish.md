@@ -12,9 +12,6 @@ tags:
 - C
 ---
 
-Move Rows from Mysql to Hadoop with [Pipefish](https://github.com/lookout/pipefish)
-==============================================
-
 Have you ever wanted to send your MySQL query results directly to a file in [HDFS](http://hadoop.apache.org/docs/stable1/hdfs_design.html)? Well, now you can!
 
 Why does this exist?
