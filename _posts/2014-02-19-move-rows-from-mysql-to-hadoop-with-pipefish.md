@@ -12,7 +12,7 @@ tags:
 - C
 ---
 
-Have you ever wanted to send your MySQL query results directly to a file in [HDFS](http://hadoop.apache.org/docs/stable1/hdfs_design.html)? Well, now you can!
+Have you ever wanted to send your MySQL query results directly to a file in [HDFS](http://hadoop.apache.org/docs/stable1/hdfs_design.html)? Well, now you can with [Pipefish](https://github.com/lookout/pipefish).
 
 Why does this exist?
 --------------------
