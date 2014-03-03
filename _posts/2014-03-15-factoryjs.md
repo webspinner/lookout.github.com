@@ -9,14 +9,14 @@ tags:
 - AOP
 ---
 
-Over the course of building many front end projects, we've learned a few lessons. One big finding is that that reusing code between these projects can be difficult, tedious and error prone. Interfaces for a given piece of reusable code are often intertwined with the current stack. Extracting that behavior involves using much larger code segments than the reusing code requires. Testing this code becomes a chore since the testing must occur in each new context.
+Over the course of building many front end projects, we've learned a few lessons. One big finding is that reusing code between these projects can be difficult, tedious and error prone. Interfaces for a given piece of reusable code are often intertwined with the current stack. Extracting that behavior involves using much larger code segments than the reusing code requires. Testing this code becomes a chore since the testing must occur in each new context.
 
-TODO: I'd add a brief note here explaining why alternatives don't solve the problem well, to more fully set context.
+Current alternatives generally require that you buy in fully to a new technology stack (AngularJS) or simply don't provide anyway to include new technologies at all (jQuery-UI). None of the alternative offer the unique feature set offered by Factory JS.
 
 AMD Dependency Soup
 -------------------
 
-To solve these issues we introduce Factory JS (TODO href to github). A dependency injection container maker so that you can organize components (types) and behaviors (mixins). Built on underscore, backbone and jquery it can encapsulate and reuse any type of library without too much effort. One of the first benefits of this utility is that it can reduce the argument soup required for an AMD module definition. Consider the following:
+[Factory JS](http://github.com/lookout/factoryjs) is a dependency injection container maker used to organize components (types) and behaviors (mixins). Built on underscore, backbone and jquery it can encapsulate and reuse any type of library without too much effort. One of the first benefits of this utility is that it can reduce the argument soup required for an AMD module definition. Consider the following:
 ```
     define(['a','b','c'], function(A, B, C){
       // we now have connascence of name and order
@@ -39,6 +39,8 @@ To achieve this the modules 'a', 'b' and 'c' might have code looking something l
       }
 
       factory.define('A', A);
+      // return the constructor for legacy support
+      return factory.getConstructor('A');
     });
 ```
 As long as this code executes the factory will return an instance of A when invoked using the get method:
@@ -104,9 +106,9 @@ Mixins can also define a mixins array in their mixinSettings to depend on other 
 Singletons
 ----------
 
-Factory JS supports singletons as a native concept. Singletons are used in javascript because the application loads as the result of a single request. It is destroyed when the page changes location or reloads. This alleviates much of the concern of singletons in other languages. With longer running execution paths singletons can present problems with maintaining long term state.
+Factory JS supports singletons as a native concept. Singletons can be used in javascript because the application loads as the result of a single request. It is destroyed when the page changes location or reloads. This alleviates much of the concern of singletons in other languages. If you are writing a single page application with a long life cycle you may want to use singletons judiciously.
 
-To make a class a singleton just pass the singleton: true flag to the definition option. Once defined the first call to get will create the object and following calls will return the same instance. In general, singleton constructors do not take arguments. This prevents you from initializing the object with the wrong arguments.
+To make a class a singleton just pass the `singleton: true` flag to the definition option. Once defined the first call to get will create the object and following calls will return the same instance. In general, singleton constructors do not take arguments. This prevents you from initializing the object with the wrong arguments.
 ```
     factory.define('TheOne', A, { singleton: true });
 
@@ -131,9 +133,29 @@ Tags
 Tags mark definitions as being part of a group. Tags can reach across type and mixin boundaries to apply behaviors to objects. This allows you to do aspect oriented things like logging, error handling and security in a consistent way across object types in your application. This is the effective equivalent of executing a callback against any instance in memory that has a tag, and binding that same callback to be applied to any instance that comes into memory with the same tag.
 
 Let's imagine that we have a large group of models and non model objects that rely on persistence strategies where the default is ajax. Let us also imagine that we have established an alternate strategy for when we are in maintenance mode where things will be routed to a local storage container for later upload. We have tagged all these model and non model objects with 'Persists'.
-```JavaScript
-// TODO: Also show how you set the tag in the factory
-
+```
+    factory.extend('Model', 'PersistingModel', {
+      save: function () {
+        this.strategy.save();
+      },
+      // the following would be better implemented as a mixin
+      strategy: function (command) {
+        switch (command) {
+          case 'online':
+            this.strategy.save = function () {
+              ... // normal strategy
+            };
+            break;
+          case 'offline':
+            this.strategy.save = function () {
+              ... // local storage
+            };
+            break;
+        }
+      }
+    }, {
+      tags: ['Persists'] // this is how we set the tag
+    })
     // let's say we get a socket call informing us of the maintenance mode
     socket.on('change:mode', function(data){
       if (data.mode === 'maintenance') {
@@ -171,4 +193,4 @@ This will allow you to compose factories from all over the place and utilize the
 Summary
 -------
 
-TODO: Add a very brief summary here including another link to the github repo.
+This is just the beginning of some of the great things you can do with [Factory JS](http://github.com/lookout/factoryjs). Some of the other uses we have found are contextual dependency injection, late binding strategies and massive, virtually effortless, code reuse. In future articles we will cover more patterns and interesting ways to use this system.
